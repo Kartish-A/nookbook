@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lemonada:wght@700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -12,32 +14,11 @@
   scroll-behavior: smooth;
 }
 body {
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
-.container {
-  /* width: 100vw; */
-  display: grid; 
-  grid-template-columns: 1fr 11fr; 
-  /* grid-template-rows: 0.3fr 1.7fr 1fr;  */
-  gap: 0px 0px; 
-  grid-template-areas: 
-  "sidebar navbar navbar"
-  "sidebar main main"
-  "sidebar main main";
-}
 
-.main { 
-  grid-area: main;
-}
-
-.navbar { 
-  grid-area: navbar;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
 .navbar-nav {
   list-style-type: none;
   margin: 0;
@@ -64,7 +45,6 @@ body {
 }
 
 .sidebar { 
-  grid-area: sidebar;
-  
+  width: 30%;
 }
 

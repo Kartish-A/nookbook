@@ -9,14 +9,14 @@ import ThemeToggler from './ThemeToggler'
 function Navbar() {
 
   return (
-    <nav className='navbar'>
+    <nav className='w-full flex justify-between items-center px-8'>
       <div className='dark:hidden'>
         <Link href='/'>
           <Image
             src='/logo_light.png'
             alt='logo'
-            width={100}
-            height={100}
+            width={120}
+            height={120}
           />
         </Link>
 
@@ -26,26 +26,26 @@ function Navbar() {
           <Image
             src='/logo_dark.png'
             alt='logo'
-            width={100}
-            height={100}
+            width={120}
+            height={120}
           />
         </Link>
       </div>
       <ul className="navbar-nav">
-        <li className="nav-item">
+        <li className="nav-item nav-link">
           <ThemeToggler />
         </li>
-        <li className="nav-item">
+        <li className="nav-item text-pickledBluewood dark:text-paleLeaf">
           <Link href="/login">
             <p className="nav-link">Login</p>
           </Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item text-pickledBluewood dark:text-paleLeaf">
           <Link href="/create-account">
             <p className="nav-link">Create Account</p>
           </Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item text-pickledBluewood dark:text-paleLeaf">
           <Link href="/about">
             <p className="nav-link">About</p>
           </Link>

@@ -28,9 +28,9 @@ function ThemeToggler() {
         onClick={() => setDarkMode(!darkMode)}>
         {
           darkMode ? (
-            <IoSunnyOutline className='text-paleLeaf cursor-pointer' size={18} />
+            <IoSunnyOutline className='text-paleLeaf cursor-pointer' size={22} />
           ) : (
-            <MdDarkMode className='text-pickledBluewood' size={18} />
+            <MdDarkMode className='text-pickledBluewood' size={22} />
           )
         }
       </div>
