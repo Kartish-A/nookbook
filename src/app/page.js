@@ -1,8 +1,6 @@
 import Image from "next/image";
 
 import { styles } from "../../styles";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import MySVG from "../../public/Woman-reading-light.svg";
 import MySVGDark from "../../public/Woman_reading_dark.svg";
 import SearchInput from "./components/SearchInput";

@@ -3,15 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { styles } from "../../../styles";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
 import MySVG from "../../../public/Login-light.svg";
 import MySVGDark from "../../../public/Login-dark.svg";
 
 function login() {
   return (
     <div className="flex">
-      <div className="nav_main_container w-full flex flex-col">
+      
         <div className="flex w-full">
           <div className="right_section w-1/2 h-2/3 flex flex-col justify-around pl-8">
             <div
@@ -83,7 +81,6 @@ function login() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
