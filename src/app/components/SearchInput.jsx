@@ -20,7 +20,7 @@ function SearchInput() {
 
 
   return (
-    <form className='flex mb-6'>
+    <form className='flex'>
       <input className={`${styles.text} ${styles.border} ${styles.borderColor}  w-96 h-10 rounded-tl-lg rounded-bl-lg bg-paleLeaf dark:bg-pickledBluewood focus:outline-none `}
         type='text'
         placeholder='  Search for a book here'

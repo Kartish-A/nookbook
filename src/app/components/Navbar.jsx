@@ -9,7 +9,7 @@ import ThemeToggler from './ThemeToggler'
 function Navbar() {
 
   return (
-    <nav className='w-full flex justify-between items-center px-8'>
+    <nav className='w-11/12 h-18 flex justify-between items-center px-10 mr-12'>
       <div className='dark:hidden'>
         <Link href='/'>
           <Image
