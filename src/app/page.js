@@ -28,6 +28,9 @@ export default function Home() {
             <Categories />
           </div>
         </div>
+        
+        {/* --------- SVG SECTION ----------  */}
+
         <div className="w-1/2 dark:hidden flex justify-center items-center">
           <Image priority src={MySVG} alt="Woman sitting and reading a book" />
         </div>

@@ -16,7 +16,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 
@@ -43,6 +43,29 @@ body {
 
 .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.select {
+  background-color: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.option {
+appearance: none;
+  list-style: none;
+  border:none;
+  background-color: none;
+}
+
+.main {
+  width: 100%;
+  width: 100%;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 

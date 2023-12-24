@@ -1,23 +1,54 @@
 "use client"
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { IoSearchOutline } from "react-icons/io5";
 
+import { useSearch } from '../SearchContext';
 import { styles } from '../../../styles';
-import { MdBorderColor } from 'react-icons/md';
 
 function SearchInput() {
+  const router = useRouter();
 
+  const { updateSearchResult, updateTotalItems } = useSearch();
   const [searchValue, setSearchValue] = useState('');
+  const [books, setBooks] = useState([]);
 
-  const handleSearch = (event) => {
+  const handleSearch = async (event) => {
     event.preventDefault();
-    console.log("search function is triggered!", searchValue);
-  };
+    if (!searchValue) {
+      window.alert("please insert a book name!")
+    } else {
+      router.push('/results')
+    }
+
+
+    try {
+      const response = await fetch(
+        `https://www.googleapis.com/books/v1/volumes?q=${searchValue}&download=epub&key=${process.env.REACT_APP_API_KEY}`
+      );
+
+      if (response.ok) {
+        console.log("SUCCESS");
+
+      } else {
+        console.log("FAILED");
+        throw new Error("Request failed with status: " + response.status);
+      }
+
+      const result = await response.json();
+      setBooks(result.items);
+      updateSearchResult(result.items);
+      updateTotalItems(result.totalItems);
+      console.log(result);
+
+    } catch (error) {
+      console.log("ERROR: ", error);
+    }
+  }
 
   const handleChange = (event) => {
     setSearchValue(event.target.value)
   }
-
 
   return (
     <form className='flex'>
@@ -35,5 +66,4 @@ function SearchInput() {
     </form>
   )
 }
-
 export default SearchInput
