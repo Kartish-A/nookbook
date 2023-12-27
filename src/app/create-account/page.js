@@ -10,13 +10,13 @@ function CreateAccount() {
   return (
     <div className="flex h-full">
       <div className="flex w-full">
-        <div className="right_section w-1/2 h-full flex flex-col justify-around pl-8">
+        <div className="right_section lg:w-1/2 h-2/3 flex flex-col justify-around pl-8">
           <div
-            className={`${styles.text} text-center text-3xl flex justify-start`}
+            className={`${styles.text} text-center text-3xl w-1/2 flex`}
           >
           Create Your Account
           </div>
-          <div className="form h-2/3 w-1/2 flex flex-col justify-around">
+          <div className="form lg:h-2/3 lg:w-1/2 md:h-full md:w-full flex flex-col justify-around">
             <div>
               <label className={`block ${styles.text} pl-6`} for="firstName">
                 First Name
@@ -99,7 +99,7 @@ function CreateAccount() {
             </div>
           </div>
           {/*  -----------  NAVIGATING TO SIGNUP PAGE IN CASE NO ACCOUNT ---------- */}
-          <div className="flex w-1/2 justify-start">
+          <div className="flex w-1/2 md:w-full justify-start">
             <div className={`${styles.text}`}>Already have account?</div>
             <div className="pl-4">
               <Link href="/login">
@@ -112,12 +112,20 @@ function CreateAccount() {
         </div>
 
         {/* --------- SVG SECTION ----------  */}
-        <div className="dark:hidden flex justify-center items-center">
-          <Image priority src={MySVG} alt="person loging in their account" />
+        <div className="lg:w-1/2 dark:hidden md:w-1/3 flex justify-center items-center">
+          <Image 
+            priority
+            width={400}
+            height={240}
+            src={MySVG} 
+            alt="person loging in their account"
+            />
         </div>
-        <div className="hidden dark:flex justify-center items-center">
+        <div className="lg:w-1/2 hidden md:w-1/3 dark:flex justify-center items-center">
           <Image
             priority
+            width={400}
+            height={240}
             src={MySVGDark}
             alt="person loging in their account"
           />

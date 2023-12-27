@@ -12,7 +12,7 @@ function Results({}) {
   return (
     <>
       <div className="h-full flex flex-col justify-start items-start pl-10">
-        <div className="input_filters flex w-1/2">
+        <div className="input_filters sm:flex w-full">
           <SearchInput />
           <Filters />
         </div>

@@ -24,7 +24,7 @@ function SearchInput() {
 
     try {
       const response = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${searchValue}&download=epub&key=${process.env.REACT_APP_API_KEY}`
+        `https://www.googleapis.com/books/v1/volumes?q=${searchValue}&download=epub&maxResults=30&key=${process.env.REACT_APP_API_KEY}`
       );
 
       if (response.ok) {
@@ -52,13 +52,13 @@ function SearchInput() {
 
   return (
     <form className='flex'>
-      <input className={`${styles.text} ${styles.border} ${styles.borderColor}  w-96 h-10 rounded-tl-lg rounded-bl-lg bg-paleLeaf dark:bg-pickledBluewood focus:outline-none `}
+      <input className={`${styles.text} ${styles.border} ${styles.borderColor}  sm:w-96 h-10 w-44 rounded-tl-lg rounded-bl-lg bg-paleLeaf dark:bg-pickledBluewood focus:outline-none `}
         type='text'
         placeholder='  Search for a book here'
         value={searchValue}
         onChange={handleChange}
       />
-      <button className="w-16 h-10 rounded-tr-lg rounded-br-lg border border-pickledBluewood dark:border-paleLeaf flex justify-center items-center"
+      <button className="w-14 sm:w-16 h-10 rounded-tr-lg rounded-br-lg border border-pickledBluewood dark:border-paleLeaf flex justify-center items-center"
         onClick={handleSearch}
       >
         <IoSearchOutline className='text-pickledBluewood dark:text-paleLeaf' size={22} />

@@ -9,10 +9,10 @@ import Categories from "./components/Categories";
 export default function Home() {
   return (
     <>
-      <div className="flex h-5/6">
-        <div className="w-1/2 flex flex-col justify-around pl-10">
+      <div className="h-full flex justify-between px-10">
+        <div className="w-1/2 flex flex-col justify-around">
           <p
-            className={`${styles.text} break-words h-64  text-xl font-normal leading-loose`}
+            className={`${styles.text} break-words h-64 lg:text-xl font-normal leading-loose md:text-lg`}
           >
             {" "}
             Welcome to BookNook Store, <br></br>your gateway to captivating
@@ -31,12 +31,20 @@ export default function Home() {
         
         {/* --------- SVG SECTION ----------  */}
 
-        <div className="w-1/2 dark:hidden flex justify-center items-center">
-          <Image priority src={MySVG} alt="Woman sitting and reading a book" />
+        <div className="lg:w-1/2 md:w-1/3 dark:hidden flex justify-center">
+          <Image 
+            priority
+            src={MySVG}
+            width={400}
+            height={240}
+            alt="Woman sitting and reading a book"
+            />
         </div>
-        <div className="w-1/2 hidden dark:flex justify-center items-center">
+        <div className="lg:w-1/2 md:w-1/3 hidden dark:flex justify-center">
           <Image
             priority
+            width={400}
+            height={240}
             src={MySVGDark}
             alt="Woman sitting and reading a book"
           />
