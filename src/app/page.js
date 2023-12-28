@@ -9,17 +9,20 @@ import Categories from "./components/Categories";
 export default function Home() {
   return (
     <>
-      <div className="h-full flex justify-between px-10">
-        <div className="w-1/2 flex flex-col justify-around">
+      <div className="h-full flex flex-col justify-between sm:flex-row px-10">
+        <div className="sm:w-1/2 h-full flex flex-col justify-around">
           <p
-            className={`${styles.text} break-words h-64 lg:text-xl font-normal leading-loose md:text-lg`}
+            className={`${styles.text} h-64 lg:text-xl leading-loose md:text-lg sm:text-xs`}
+            style={{ whiteSpace: "pre-line" }}
           >
             {" "}
-            Welcome to BookNook Store, <br></br>your gateway to captivating
-            stories and knowledge.<br></br> Explore our diverse collection of
-            books, spanning classic literature to modern bestsellers.<br></br>{" "}
-            Find your next literary adventure with us.<br></br>
-            <br></br> Happy reading!{" "}
+            Welcome to BookNook Store,
+            <br></br>your gateway to captivating stories and knowledge.
+            <br></br> Explore our diverse collection of books, spanning classic
+            literature to modern bestsellers.
+            <br></br> Find your next literary adventure with us.
+            <br></br>
+            Happy reading!{" "}
           </p>
           <div className="">
             <SearchInput />
@@ -28,17 +31,16 @@ export default function Home() {
             <Categories />
           </div>
         </div>
-        
-        {/* --------- SVG SECTION ----------  */}
 
+        {/* --------- SVG SECTION ----------  */}
         <div className="lg:w-1/2 md:w-1/3 dark:hidden flex justify-center">
-          <Image 
+          <Image
             priority
             src={MySVG}
             width={400}
             height={240}
             alt="Woman sitting and reading a book"
-            />
+          />
         </div>
         <div className="lg:w-1/2 md:w-1/3 hidden dark:flex justify-center">
           <Image

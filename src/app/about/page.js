@@ -13,7 +13,7 @@ export default function About() {
           <div className={`${styles.text} text-center text-4xl font-bold font-['Lemonada']`}>About us</div>
           </div>
           <p
-            className={`${styles.text} break-words h-64  text-xl font-normal leading-loose`}
+            className={`${styles.text} h-64 lg:text-xl leading-loose md:text-lg sm:text-xs`}
           >
             {" "}
             Welcome to BookNook Store, <br></br>your gateway to captivating

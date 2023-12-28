@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
             <div className="NavContainer">
               <Navbar />
             </div>
-            <div className="h-full ">{children}</div>
+            <div className="h-full">{children}</div>
           </div>
         </body>
       </SearchProvider>
