@@ -10,13 +10,13 @@ function CreateAccount() {
   return (
     <div className="flex h-full">
       <div className="flex flex-col w-full sm:flex-row ">
-        <div className="right_section flex flex-col justify-around pl-8 sm:w-1/2 sm:h-2/3 ">
+        <div className="right_section border flex flex-col justify-around pl-8 sm:w-1/2 h-2/3 ">
           <div
-            className={`${styles.text} text-center lg:text-3xl sm:text-sm w-1/2 flex`}
+            className={`${styles.text} text-center text-3xl font-semibold flex justify-start items-start`}
           >
-          Create Your Account
+            Create Your Account
           </div>
-          <div className="form sm:h-2/3 lg:w-1/2 md:h-full md:w-full flex flex-col justify-around">
+          <div className="form h-2/3 w-full flex flex-col justify-around pr-2">
             <div>
               <label className={`block ${styles.text} pl-6`} for="firstName">
                 First Name
@@ -99,25 +99,19 @@ function CreateAccount() {
             </div>
           </div>
           {/*  -----------  NAVIGATING TO SIGNUP PAGE IN CASE NO ACCOUNT ---------- */}
-          <div className="flex sm:w-1/2 md:w-full justify-start">
-            <div className={`${styles.text}`}>Already have account?</div>
-            <div className="pl-4">
-              <Link href="/login">
-                <p className={`${styles.text} text-sm font-['Lemonada'] sm:pl-4`}>
-                  Login here
-                </p>
-              </Link>
-            </div>
+          <div className="flex justify-start">
+            <div className={`${styles.text}`}>{" have account? "}</div>
+            <Link href="/login">
+              <p className={`${styles.text} text-sm font-['Lemonada'] sm:pl-2`}>
+                Login here
+              </p>
+            </Link>
           </div>
         </div>
 
         {/* --------- SVG SECTION ----------  */}
         <div className="svg lg:w-1/2 dark:hidden md:w-1/3 flex justify-center items-center">
-          <Image 
-            priority
-            src={MySVG} 
-            alt="person loging in their account"
-            />
+          <Image priority src={MySVG} alt="person loging in their account" />
         </div>
         <div className="svg lg:w-1/2 hidden md:w-1/3 dark:flex justify-center items-center">
           <Image

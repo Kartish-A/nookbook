@@ -16,7 +16,7 @@ function login() {
           >
             Welcome back
           </div>
-          <div className="form h-2/3 sm:w-1/2 py-6 flex flex-col justify-around">
+          <div className="form h-2/3 sm:w-1/2 py-6 flex flex-col justify-around pr-2">
             <div>
               <label className={`block ${styles.text} pl-6 `} for="email">
                 E-mail
@@ -53,15 +53,13 @@ function login() {
             </div>
           </div>
           {/*  -----------  NAVIGATING TO SIGNUP PAGE IN CASE NO ACCOUNT ---------- */}
-          <div className="flex sm:w-1/2 md:w-full justify-start">
-            <div className={`${styles.text}`}>don’t have account?</div>
-            <div className="pl-4">
+          <div className="flex justify-start">
+            <div className={`${styles.text}`}>{"don’t have account?"}</div>
               <Link href="/create-account">
-                <p className={`${styles.text} text-sm font-['Lemonada'] pl-4`}>
+                <p className={`${styles.text} text-sm font-['Lemonada'] pl-2`}>
                   Register here
                 </p>
               </Link>
-            </div>
           </div>
         </div>
 

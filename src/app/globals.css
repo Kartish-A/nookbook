@@ -26,6 +26,14 @@
   }
 }
 
+.right_section {
+  @media(max-width: 640px) {
+    flex: 1;
+    justify-content: space-evenly ;
+  }
+}
+
+
 .navbar-nav {
   list-style-type: none;
   margin: 0;
