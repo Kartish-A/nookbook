@@ -112,14 +112,14 @@ function CreateAccount() {
         </div>
 
         {/* --------- SVG SECTION ----------  */}
-        <div className="lg:w-1/2 dark:hidden md:w-1/3 flex justify-center items-center">
+        <div className="svg lg:w-1/2 dark:hidden md:w-1/3 flex justify-center items-center">
           <Image 
             priority
             src={MySVG} 
             alt="person loging in their account"
             />
         </div>
-        <div className="lg:w-1/2 hidden md:w-1/3 dark:flex justify-center items-center">
+        <div className="svg lg:w-1/2 hidden md:w-1/3 dark:flex justify-center items-center">
           <Image
             priority
             src={MySVGDark}

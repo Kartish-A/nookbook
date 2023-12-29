@@ -13,6 +13,19 @@
   scroll-behavior: smooth;
 }
 
+.welcome {
+  @media(max-width: 640px) {
+    flex: 1;
+  }
+
+}
+
+.svg {
+  @media(max-width: 640px) {
+    display: none !important;
+  }
+}
+
 .navbar-nav {
   list-style-type: none;
   margin: 0;

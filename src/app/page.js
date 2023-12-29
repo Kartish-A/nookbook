@@ -12,7 +12,7 @@ export default function Home() {
       <div className="h-full flex flex-col justify-between sm:flex-row px-10">
         <div className="sm:w-1/2 h-full flex flex-col justify-around">
           <p
-            className={`${styles.text} h-64 lg:text-xl leading-loose md:text-lg sm:text-xs`}
+            className={`${styles.text} welcome h-64 lg:text-xl leading-loose md:text-lg sm:text-xs`}
             style={{ whiteSpace: "pre-line" }}
           >
             {" "}
@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         {/* --------- SVG SECTION ----------  */}
-        <div className="lg:w-1/2 md:w-1/3 dark:hidden flex justify-center">
+        <div className="svg lg:w-1/2 md:w-1/3 dark:hidden flex justify-center">
           <Image
             priority
             src={MySVG}
@@ -42,7 +42,7 @@ export default function Home() {
             alt="Woman sitting and reading a book"
           />
         </div>
-        <div className="lg:w-1/2 md:w-1/3 hidden dark:flex justify-center">
+        <div className="svg lg:w-1/2 md:w-1/3 hidden dark:flex justify-center">
           <Image
             priority
             width={400}

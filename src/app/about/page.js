@@ -26,10 +26,10 @@ export default function About() {
 
         {/* --------- SVG SECTION ----------  */}
 
-        <div className="w-1/2 dark:hidden flex justify-center items-center">
+        <div className="svg w-1/2 dark:hidden flex justify-center items-center">
           <Image priority src={MySVG} alt="Woman sitting and reading a book" />
         </div>
-        <div className="w-1/2 hidden dark:flex justify-center items-center">
+        <div className="svg w-1/2 hidden dark:flex justify-center items-center">
           <Image
             priority
             src={MySVGDark}
