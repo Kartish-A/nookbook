@@ -23,7 +23,7 @@ function Navbar() {
   }
 
   return (
-    <nav className='w-11/12 h-18 flex justify-between items-center px-10 mr-12'>
+    <nav className='w-11/12 h-18 flex justify-between items-center pl-10 mr-12'>
       <div className='dark:hidden'>
         <Link href='/'>
           <Image
@@ -51,7 +51,7 @@ function Navbar() {
 
         {isOpen ? (
           <div className='fixed top-0 left-0 w-full h-full bg-paleLeaf dark:bg-pickledBluewood flex flex-col justify-start items-center pt-16 z-50'>
-            <div className={`${styles.border} ${styles.borderColor} w-10 h-10 flex justify-center items-center rounded-full`}>
+            <div className={`${styles.border} ${styles.borderColor} w-10 h-10 flex justify-center items-center rounded-full mb-14`}>
             <GrClose className={`${styles.text}`} size={22} onClick={openMenu} />
             </div>
             <ul className='h-72 flex flex-col justify-around items-center'>

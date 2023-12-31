@@ -10,13 +10,13 @@ function CreateAccount() {
   return (
     <div className="flex h-full">
       <div className="flex flex-col w-full sm:flex-row ">
-        <div className="right_section border flex flex-col justify-around pl-8 sm:w-1/2 h-2/3 ">
+        <div className="right_section flex flex-col justify-around pl-8 sm:w-1/2 h-full">
           <div
-            className={`${styles.text} text-center text-3xl font-semibold flex justify-start items-start`}
+            className={`${styles.text} text-center text-3xl font-semibold flex justify-start items-start mb-4`}
           >
             Create Your Account
           </div>
-          <div className="form h-2/3 w-full flex flex-col justify-around pr-2">
+          <div className="form h-2/3 w-full flex flex-col justify-around mt-10 mb-4 pr-2">
             <div>
               <label className={`block ${styles.text} pl-6`} for="firstName">
                 First Name

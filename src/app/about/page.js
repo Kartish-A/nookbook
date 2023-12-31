@@ -7,13 +7,14 @@ import MySVGDark from "../../../public/Book_lover_cuate_dark.svg";
 export default function About() {
   return (
     <>
-      <div className="flex h-5/6">
-        <div className="w-1/2 h-2/3 flex flex-col justify-around pl-10">
+      <div className="flex h-full sm:flex-row">
+        <div className="sm:w-1/2 h-2/3 flex flex-col justify-around pl-10">
           <div className="flex justify-start">
           <div className={`${styles.text} text-center text-4xl font-bold font-['Lemonada']`}>About us</div>
           </div>
           <p
             className={`${styles.text} h-64 lg:text-xl leading-loose md:text-lg sm:text-xs`}
+            style={{ whiteSpace: "pre-line" }}
           >
             {" "}
             Welcome to BookNook Store, <br></br>your gateway to captivating
