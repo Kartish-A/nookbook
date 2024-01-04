@@ -10,11 +10,11 @@ export default function RootLayout({ children }) {
       <SearchProvider>
         <body className="flex bg-paleLeaf dark:bg-pickledBluewood">
           <Sidebar />
-          <div className="second-section w-full flex flex-col flex-shrink-1">
+          <div className="second-section w-full flex flex-col">
             <div className="NavContainer">
               <Navbar />
             </div>
-            <div className="h-full">{children}</div>
+            <div>{children}</div>
           </div>
         </body>
       </SearchProvider>
